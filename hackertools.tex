@@ -920,7 +920,7 @@ cat log
   Remember that \texttt{awk} is a programming language, so we can actually not use \texttt{wc -l} at all:
   \begin{minted}{awk}
 BEGIN { rows = 0 }
-$1 == 1 && $2 ~ /^c[^ ]*e$/ { rows += $1 }
+$1 == 1 && $2 ~ /^r[^ ]*t$/ { rows += $1 }
 END { print rows }
   \end{minted}
   \begin{itemize}
